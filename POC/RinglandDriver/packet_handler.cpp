@@ -28,7 +28,7 @@ static uint64_t handle_copy_memory(const PacketCopyMemory& packet)
 		dest_process,
 		(void*)packet.dest_address,
 		packet.size,
-		UserMode,
+		KernelMode,
 		&return_size
 	);
 
